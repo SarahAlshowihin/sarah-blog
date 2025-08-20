@@ -21,7 +21,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const postId = urlParams.get('id');
 
-    fetch('posts.json'?v= + new Data().getTime())
+    fetch('posts.json')
       .then(response => response.json())
       .then(data => {
         if (postId !== null && data[postId]) {
@@ -44,5 +44,6 @@
 
 </body>
 </html>
+
 
 
