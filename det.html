@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Details</title>
+
+  <link rel="stylesheet" href="detst.css">
+</head>
+<body>
+  <header>
+    <nav class  = "navbar">
+        <div class = "container">
+            <a href = "index.html" class="navbar-brand">SARAHH'S WORLD</a>
+        </header>
+
+  <div id="post"></div>
+  <a href="import.html#blog" class="back">⬅ رجوع للمدونة</a> 
+
+  <script>
+    // قراءة رقم التدوينة من الرابط
+    const urlParams = new URLSearchParams(window.location.search);
+    const postId = urlParams.get('id');
+
+    fetch('posts.json')
+      .then(response => response.json())
+      .then(data => {
+        if (postId !== null && data[postId]) {
+          const post = data[postId];
+          const postDiv = document.getElementById('post');
+          postDiv.className = 'post';
+          postDiv.innerHTML = `
+        
+            <h2>${post.title}</h2>
+            <h3>${post.date}</h3>
+            <p>${post.content}</p>
+           
+          `;
+        } else {
+          document.getElementById('post').innerHTML = "<p>لم يتم العثور على التدوينة.</p>";
+        }
+      })
+      .catch(error => console.error('خطأ في تحميل التدوينة:', error));
+  </script>
+
+</body>
+</html>
