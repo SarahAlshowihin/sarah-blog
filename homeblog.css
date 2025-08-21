@@ -32,7 +32,7 @@ img{
 }
 header{
    min-height: 100vh;
-   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(background.jpeg) center/cover repeat fixed ;
+   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(backgro.png) center/cover repeat fixed ;
    display: flex;
    flex-direction: column;
    justify-content: stretch;
@@ -389,6 +389,7 @@ footer{
 .read-more:hover {
     background-color: #A2AA92; /* لون الخلفية عند التحويم */
 }
+
 
 
 
