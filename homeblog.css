@@ -39,8 +39,6 @@ header{
    
 }
 
-
-
 .navbar{
    background: #A2AA92;
    padding: 1.2rem;
@@ -391,6 +389,7 @@ footer{
 .read-more:hover {
     background-color: #A2AA92; /* لون الخلفية عند التحويم */
 }
+
 
 
 
