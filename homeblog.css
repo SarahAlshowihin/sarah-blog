@@ -31,14 +31,16 @@ img{
    padding: 0 1.2rem;
 }
 
-header{
-   min-height: 100vh;
-   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(background.jpeg) center/cover no-repeat fixed ;
-   display: flex;
-   flex-direction: column;
-   justify-content: stretch;
-   
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                url(background.jpeg) center center no-repeat;
+    background-size: contain; /* تظهر الصورة كاملة بدون قص */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
+
 .navbar{
    background: #A2AA92;
    padding: 1.2rem;
@@ -389,4 +391,5 @@ footer{
 .read-more:hover {
     background-color: #A2AA92; /* لون الخلفية عند التحويم */
 }
+
 
