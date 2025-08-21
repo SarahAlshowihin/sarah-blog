@@ -104,4 +104,10 @@ body {
     }
     a.back:hover {
       background: #A2AA92;
+
     }
+img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
