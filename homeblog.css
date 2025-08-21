@@ -30,12 +30,13 @@ img{
    margin: 0 auto;
    padding: 0 1.2rem;
 }
-header {
-    min-height: 100vh;
-    background: url('background.jpeg') center center / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+header{
+   min-height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(background.jpeg) center/cover repeat fixed ;
+   display: flex;
+   flex-direction: column;
+   justify-content: stretch;
+   
 }
 
 
@@ -390,6 +391,7 @@ footer{
 .read-more:hover {
     background-color: #A2AA92; /* لون الخلفية عند التحويم */
 }
+
 
 
 
